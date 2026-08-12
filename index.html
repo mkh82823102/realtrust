@@ -28,15 +28,21 @@
 <a aria-label="Real Trust home" class="header__brand" href="#home">
 <img alt="Real Trust" class="header__logo" decoding="async" src="project-files/Frame 9.svg"/>
 </a>
-<nav aria-label="Primary navigation" class="header__nav">
+<nav aria-label="Primary navigation" class="header__nav" id="primary-navigation" data-mobile-nav>
 <a class="header__nav-link header__nav-link--active" href="#home">HOME</a>
 <a class="header__nav-link" href="#services">SERVICES</a>
 <a class="header__nav-link" href="#projects">ABOUT PROJECTS</a>
 <a class="header__nav-link" href="#testimonials">TESTIMONIALS</a>
+<a class="header__nav-link header__nav-contact" href="#contact">CONTACT</a>
 </nav>
 <button aria-label="Switch to dark theme" aria-pressed="false" class="theme-toggle" data-theme-toggle="" type="button">
 <span aria-hidden="true" class="theme-toggle__icon theme-toggle__icon--moon">☾</span>
 <span aria-hidden="true" class="theme-toggle__icon theme-toggle__icon--sun">☀</span>
+</button>
+<button class="header__menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation" data-menu-toggle>
+<span class="header__menu-bar"></span>
+<span class="header__menu-bar"></span>
+<span class="header__menu-bar"></span>
 </button>
 <a class="button button--orange header__contact" href="#contact">CONTACT</a>
 </div>

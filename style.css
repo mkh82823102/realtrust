@@ -451,3 +451,241 @@ html[data-theme="dark"] .footer__bottom { background: #070b12; }
 }
 .project-card,
 .testimonial-card { contain: layout paint style; }
+
+/* =========================
+   Mobile navigation + complete responsive imagery
+   ========================= */
+.header__nav-contact { display: none; }
+
+.header__menu-toggle {
+  display: none;
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  padding: 0;
+  border: 1px solid #dbe5f2;
+  border-radius: 10px;
+  background: #f5f8fd;
+  color: var(--color-navy);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  transition: background .2s ease, border-color .2s ease, transform .2s ease;
+}
+.header__menu-toggle:hover { transform: translateY(-1px); }
+.header__menu-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+  transition: transform .25s ease, opacity .2s ease;
+}
+.header--menu-open .header__menu-bar:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.header--menu-open .header__menu-bar:nth-child(2) { opacity: 0; }
+.header--menu-open .header__menu-bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+html[data-theme="dark"] .header__menu-toggle {
+  color: #c4d0e1;
+  background: #152238;
+  border-color: #2a3b55;
+}
+
+@media (max-width: 768px) {
+  .header {
+    position: relative;
+    z-index: 50;
+    height: auto;
+  }
+
+  .header__inner {
+    min-height: 78px;
+    flex-wrap: nowrap;
+    gap: 10px;
+    padding-block: 12px;
+  }
+
+  .header__brand { margin-right: auto; }
+  .header__logo { width: clamp(132px, 39vw, 165px); }
+  .theme-toggle {
+    width: 44px;
+    height: 44px;
+    flex-basis: 44px;
+    margin-left: 0;
+  }
+  .header__menu-toggle { display: flex; }
+  .header__contact { display: none; }
+
+  .header__nav {
+    position: absolute;
+    top: 100%;
+    left: 14px;
+    right: 14px;
+    z-index: 60;
+    display: none;
+    width: auto;
+    margin: 0;
+    padding: 14px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    background: #fff;
+    border: 1px solid #e1e8f2;
+    border-radius: 14px;
+    box-shadow: 0 18px 48px rgba(25, 42, 104, .16);
+  }
+
+  .header--menu-open .header__nav { display: flex; }
+
+  .header__nav-link {
+    width: 100%;
+    padding: 13px 14px;
+    border-radius: 9px;
+    font-size: 14px;
+    text-align: left;
+  }
+  .header__nav-link:hover,
+  .header__nav-link:focus-visible { background: rgba(33, 123, 244, .08); }
+  .header__nav-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6px;
+    color: #fff;
+    background: var(--color-orange);
+    font-weight: 600;
+    text-align: center;
+  }
+  .header__nav-contact:hover,
+  .header__nav-contact:focus-visible { background: #e96117; }
+
+  html[data-theme="dark"] .header__nav {
+    background: #0d1726;
+    border-color: #203047;
+    box-shadow: 0 18px 48px rgba(0,0,0,.34);
+  }
+  html[data-theme="dark"] .header__nav-link:hover,
+  html[data-theme="dark"] .header__nav-link:focus-visible { background: rgba(103, 167, 255, .1); }
+
+  /* Hero image: preserve the complete source image instead of cropping it. */
+  .hero__media {
+    background-position: center, center top;
+    background-size: cover, contain;
+    background-color: #687683;
+  }
+
+  /* Realtor images become a true mobile grid instead of overlapping/cropping circles. */
+  .realtor__gallery {
+    min-height: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .realtor__portrait,
+  .realtor__portrait--main,
+  .realtor__portrait--top,
+  .realtor__portrait--bottom {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    transform: none;
+    border-radius: 18px;
+    background: #edf5ff;
+    box-shadow: 0 0 0 1px rgba(33,123,244,.14);
+  }
+  .realtor__image { width: 100%; height: 100%; object-fit: contain; }
+
+  /* Collage becomes stacked, so every photograph fits within the viewport. */
+  .collage__inner {
+    min-height: 0;
+    display: grid;
+    gap: 18px;
+  }
+  .collage__shape { display: none; }
+  .collage__photo,
+  .collage__photo--left,
+  .collage__photo--center,
+  .collage__photo--right {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    transform: none;
+    border-radius: 16px;
+  }
+  .collage__image { width: 100%; height: 100%; object-fit: contain; }
+
+  /* Slider images keep their full frame visible. */
+  .projects__track {
+    gap: 16px;
+    padding-inline: 14px;
+  }
+  .project-card {
+    width: calc(100vw - 42px);
+    flex-basis: calc(100vw - 42px);
+    max-width: 430px;
+  }
+  .project-card__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    background: #eef3f8;
+  }
+
+  .testimonials__track {
+    gap: 16px;
+    padding-inline: 14px;
+  }
+  .testimonial-card {
+    width: calc(100vw - 42px);
+    flex-basis: calc(100vw - 42px);
+    max-width: 390px;
+  }
+  .testimonial-card__avatar {
+    object-fit: contain;
+    background: #fff;
+  }
+
+  .listing-cta__media {
+    object-fit: contain;
+    background: #18202b;
+  }
+
+  .benefits__icon,
+  .benefits__icon--wide,
+  .header__logo,
+  .footer__logo {
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .footer__logo { height: auto; }
+}
+
+@media (max-width: 420px) {
+  .container { width: min(100% - 24px, var(--container)); }
+  .header__inner { gap: 8px; }
+  .header__logo { width: 132px; }
+  .theme-toggle,
+  .header__menu-toggle { width: 42px; height: 42px; flex-basis: 42px; }
+  .hero__title { font-size: clamp(38px, 12vw, 48px); }
+  .lead-form { padding-inline: 18px; }
+  .project-card,
+  .testimonial-card {
+    width: calc(100vw - 32px);
+    flex-basis: calc(100vw - 32px);
+  }
+}
+@media (max-width: 768px) {
+  html[data-theme="dark"] .header__nav-contact,
+  html[data-theme="dark"] .header__nav-contact:hover,
+  html[data-theme="dark"] .header__nav-contact:focus-visible {
+    color: #fff;
+    background: var(--color-orange);
+  }
+}

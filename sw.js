@@ -1,11 +1,12 @@
-const CACHE_NAME = "realtrust-v3";
+const CACHE_NAME = "realtrust-v4";
 const LOCAL_ASSETS = [
   "./",
   "./index.html",
   "./style.css",
   "./main.js",
   "./project-files/Frame 9.svg",
-  "./project-files/hero.webp"
+  "./project-files/hero.webp",
+  "./project-files/hero.avif"
 ];
 
 self.addEventListener("install", (event) => {
