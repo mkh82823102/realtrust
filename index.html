@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head><link crossorigin="" href="https://www.figma.com" rel="preconnect"/><link href="//www.figma.com" rel="dns-prefetch"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Real Trust real estate lead generation landing page" name="description"/>
+<title>Real Trust</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+
+<script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem("realtrust-theme");
+        const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.dataset.theme = savedTheme || systemTheme;
+      } catch (error) {
+        document.documentElement.dataset.theme = "light";
+      }
+    })();
+  </script>
+<link href="style.css" rel="stylesheet">
+</link><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap" media="print" onload="this.media='all'" rel="stylesheet"/><noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/></noscript><link as="image" fetchpriority="high" href="project-files/hero.avif" rel="preload" type="image/avif"/></head>
+<body class="page">
+<header class="header">
+<div class="container header__inner">
+<a aria-label="Real Trust home" class="header__brand" href="#home">
+<img alt="Real Trust" class="header__logo" decoding="async" src="project-files/Frame 9.svg"/>
+</a>
+<nav aria-label="Primary navigation" class="header__nav">
+<a class="header__nav-link header__nav-link--active" href="#home">HOME</a>
+<a class="header__nav-link" href="#services">SERVICES</a>
+<a class="header__nav-link" href="#projects">ABOUT PROJECTS</a>
+<a class="header__nav-link" href="#testimonials">TESTIMONIALS</a>
+</nav>
+<button aria-label="Switch to dark theme" aria-pressed="false" class="theme-toggle" data-theme-toggle="" type="button">
+<span aria-hidden="true" class="theme-toggle__icon theme-toggle__icon--moon">☾</span>
+<span aria-hidden="true" class="theme-toggle__icon theme-toggle__icon--sun">☀</span>
+</button>
+<a class="button button--orange header__contact" href="#contact">CONTACT</a>
+</div>
+</header>
+<main class="page__main">
+<section class="hero" id="home">
+<div aria-hidden="true" class="hero__media"></div>
+<div class="container hero__inner">
+<div class="hero__content">
+<h1 class="hero__title">Consultation,<br/>Design,<br/>&amp; Marketing</h1>
+</div>
+<aside class="lead-form" id="contact">
+<h2 class="lead-form__title">Get a Free<br/>Consultation</h2>
+<form class="lead-form__form" data-lead-form="">
+<div class="lead-form__field">
+<label class="lead-form__label" for="full-name">Full Name</label>
+<input class="lead-form__input" id="full-name" name="fullName" placeholder="Full Name" required="" type="text"/>
+</div>
+<div class="lead-form__field">
+<label class="lead-form__label" for="email">Email</label>
+<input class="lead-form__input" id="email" name="email" placeholder="Enter Email Address" required="" type="email"/>
+</div>
+<div class="lead-form__field">
+<label class="lead-form__label" for="mobile">Mobile Number</label>
+<input class="lead-form__input" id="mobile" name="mobile" placeholder="Mobile Number" type="tel"/>
+</div>
+<div class="lead-form__field">
+<label class="lead-form__label" for="area">Area, City</label>
+<input class="lead-form__input" id="area" name="area" placeholder="Area, City" required="" type="text"/>
+</div>
+<button class="button button--orange button--full lead-form__submit" type="submit">Get Quick Quote</button>
+<p aria-live="polite" class="lead-form__success" data-success-message="" role="status">Thanks! Your request has been received.</p>
+</form>
+</aside>
+</div>
+</section>
+<section class="realtor" id="services">
+<div aria-hidden="true" class="realtor__decoration realtor__decoration--left"></div>
+<div aria-hidden="true" class="realtor__decoration realtor__decoration--right"></div>
+<div class="container realtor__inner">
+<div class="realtor__copy">
+<h2 class="section-title realtor__title">Not Your Average Realtor</h2>
+<p class="realtor__text">Real Trust has an eye for seeing a property’s potential, coordinating design, and effectively marketing to get homeowners top dollar on their sales.</p>
+</div>
+<div aria-label="Real estate consultation team" class="realtor__gallery">
+<figure class="realtor__portrait realtor__portrait--main">
+<img alt="Real estate consultant presenting a home" class="realtor__image lazy-image" data-lazy-src="https://www.figma.com/api/mcp/asset/9941f595-f2a1-44af-8d35-94ec6cc86a8f.png" decoding="async" fetchpriority="low" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/>
+</figure>
+<figure class="realtor__portrait realtor__portrait--top">
+<img alt="Homeowners discussing a property" class="realtor__image lazy-image" data-lazy-src="https://www.figma.com/api/mcp/asset/5e37ecda-28e2-4d3d-b54d-b798463a4351.png" decoding="async" fetchpriority="low" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/>
+</figure>
+<figure class="realtor__portrait realtor__portrait--bottom">
+<img alt="Real estate professional" class="realtor__image lazy-image" data-lazy-src="https://www.figma.com/api/mcp/asset/2a4bdf07-af8e-4be0-aa54-4d9a29b1db22.png" decoding="async" fetchpriority="low" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/>
+</figure>
+</div>
+</div>
+</section>
+<section class="benefits">
+<div class="container benefits__inner">
+<div class="section-heading benefits__heading">
+<h2 class="section-title section-title--center">Why Choose Us?</h2>
+<span aria-hidden="true" class="section-heading__line"></span>
+</div>
+<div class="benefits__grid">
+<article class="benefits__item">
+<div class="benefits__icon-wrap"><img alt="" class="benefits__icon lazy-image" data-lazy-src="https://www.figma.com/api/mcp/asset/90e82e8e-2c93-48a2-b8ed-6b531ede3849.svg" decoding="async" fetchpriority="low" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/></div>
+<h3 class="benefits__title">Potential ROI</h3>
+<p class="benefits__text">Whether you are looking to buy a fixer-upper or renovate your current home for sale, we will walk you through potential returns for projects.</p>
+</article>
+<article class="benefits__item">
+<div class="benefits__icon-wrap"><img alt="" class="benefits__icon benefits__icon--wide lazy-image" data-lazy-src="https://www.figma.com/api/mcp/asset/a6f186ab-5a73-4232-94f1-34ad56900b9b.svg" decoding="async" fetchpriority="low" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/></div>
+<h3 class="benefits__title">Design</h3>
+<p class="benefits__text">Our background in interior design makes the perfect guide through your design options and coordinating contractors to complete the home upgrade.</p>
+</article>
+<article class="benefits__item">
+<div class="benefits__icon-wrap"><img alt="" class="benefits__icon lazy-image" data-lazy-src="https://www.figma.com/api/mcp/asset/dd2e6639-ad15-4169-9a8c-b69cc503f828.svg" decoding="async" fetchpriority="low" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/></div>
+<h3 class="benefits__title">Marketing</h3>
+<p class="benefits__text">Staging consultation, professional photos and a sophisticated digital marketing plan accompany every listing to reach today’s buyers.</p>
+</article>
+</div>
+</div>
+</section>
+<section aria-label="Real Trust project photography" class="collage">
+<div class="container collage__inner">
+<div aria-hidden="true" class="collage__shape collage__shape--a"></div>
+<div aria-hidden="true" class="collage__shape collage__shape--b"></div>
+<figure class="collage__photo collage__photo--left">
+<img alt="House exterior" class="collage__image lazy-image" data-lazy-src="https://www.figma.com/api/mcp/asset/5e37ecda-28e2-4d3d-b54d-b798463a4351.png" decoding="async" fetchpriority="low" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/>
+</figure>
+<figure class="collage__photo collage__photo--center">
+<img alt="Real estate consultation" class="collage__image lazy-image" data-lazy-src="https://www.figma.com/api/mcp/asset/9941f595-f2a1-44af-8d35-94ec6cc86a8f.png" decoding="async" fetchpriority="low" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/>
+</figure>
+<figure class="collage__photo collage__photo--right">
+<img alt="Team discussion" class="collage__image lazy-image" data-lazy-src="https://www.figma.com/api/mcp/asset/2a4bdf07-af8e-4be0-aa54-4d9a29b1db22.png" decoding="async" fetchpriority="low" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/>
+</figure>
+</div>
+</section>
+<section class="about" id="about">
+<div class="container about__inner">
+<div class="section-heading about__heading">
+<h2 class="section-title section-title--center">About Us</h2>
+<span aria-hidden="true" class="section-heading__line"></span>
+</div>
+<p class="about__text">Fifteen years of experience in real estate, excellent customer service and a commitment to work hard, listen and follow through. We provide quality service to build relationships with clients and, more importantly, maintain those relationships by communicating effectively.</p>
+<a class="button button--outline-blue about__button" href="#projects">LEARN MORE</a>
+</div>
+</section>
+<section class="projects" data-slider="" id="projects">
+<div class="container projects__heading-wrap">
+<h2 class="section-title section-title--center">Our Projects</h2>
+<p class="projects__intro">We know what buyers are looking for and suggest projects that will bring clients top dollar for the sale of their homes.</p>
+<div aria-label="Our Projects slider controls" class="slider-nav projects__controls">
+<button aria-label="Previous projects" class="slider-nav__button slider-nav__button--prev" data-slider-prev="" type="button">←</button>
+<button aria-label="Next projects" class="slider-nav__button slider-nav__button--next" data-slider-next="" type="button">→</button>
+</div>
+</div>
+<div class="projects__viewport" data-slider-viewport="">
+<div class="projects__track" data-slider-track="">
+<article class="project-card">
+<img alt="Real estate project" class="project-card__image lazy-image" data-lazy-src="https://www.figma.com/api/mcp/asset/c21a71de-acf7-486d-81e5-dd5d67ddc9e7.png" decoding="async" fetchpriority="low" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/>
+<div class="project-card__body"><h3 class="project-card__title">Consultation</h3><p class="project-card__meta">Project Name, Location</p><a class="button button--orange button--compact project-card__button" href="#">READ MORE</a></div>
+</article>
+<article class="project-card">
+<img alt="Real estate project" class="project-card__image lazy-image" data-lazy-src="https://www.figma.com/api/mcp/asset/70208f3d-a0cf-463a-9a56-d91dea14c87d.png" decoding="async" fetchpriority="low" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/>
+<div class="project-card__body"><h3 class="project-card__title">Design</h3><p class="project-card__meta">Project Name, Location</p><a class="button button--orange button--compact project-card__button" href="#">READ MORE</a></div>
+</article>
+<article class="project-card">
+<img alt="Real estate project" class="project-card__image lazy-image" data-lazy-src="https://www.figma.com/api/mcp/asset/abae551b-3774-4961-8150-a42bc3ca3cde.png" decoding="async" fetchpriority="low" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/>
+<div class="project-card__body"><h3 class="project-card__title">Marketing &amp; Design</h3><p class="project-card__meta">Project Name, Location</p><a class="button button--orange button--compact project-card__button" href="#">READ MORE</a></div>
+</article>
+<article class="project-card">
+<img alt="Real estate project" class="project-card__image lazy-image" data-lazy-src="https://www.figma.com/api/mcp/asset/335d73a7-f396-441e-8a55-2946f25f5090.png" decoding="async" fetchpriority="low" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/>
+<div class="project-card__body"><h3 class="project-card__title">Consultation &amp; Marketing</h3><p class="project-card__meta">Project Name, Location</p><a class="button button--orange button--compact project-card__button" href="#">READ MORE</a></div>
+</article>
+<article class="project-card">
+<img alt="Real estate project" class="project-card__image lazy-image" data-lazy-src="https://www.figma.com/api/mcp/asset/fd87be02-8e11-4e43-8ce4-bd70b707aef2.png" decoding="async" fetchpriority="low" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/>
+<div class="project-card__body"><h3 class="project-card__title">Consultation</h3><p class="project-card__meta">Project Name, Location</p><a class="button button--orange button--compact project-card__button" href="#">READ MORE</a></div>
+</article>
+</div>
+</div>
+</section>
+<section class="testimonials" data-slider="" id="testimonials">
+<div class="container testimonials__inner">
+<h2 class="section-title section-title--center testimonials__title">Happy Clients</h2>
+<div aria-label="Happy Clients slider controls" class="slider-nav testimonials__controls">
+<button aria-label="Previous testimonials" class="slider-nav__button slider-nav__button--prev" data-slider-prev="" type="button">←</button>
+<button aria-label="Next testimonials" class="slider-nav__button slider-nav__button--next" data-slider-next="" type="button">→</button>
+</div>
+</div>
+<div class="testimonials__viewport" data-slider-viewport="">
+<div class="testimonials__track" data-slider-track="">
+<article class="testimonial-card"><img alt="Rowhan Smith" class="testimonial-card__avatar lazy-image" data-lazy-src="https://www.figma.com/api/mcp/asset/b0159be6-171c-46f1-8b19-e16425be1a66.png" decoding="async" fetchpriority="low" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><p class="testimonial-card__quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><h3 class="testimonial-card__name">Rowhan Smith</h3><p class="testimonial-card__role">CEO, Foreclosure</p></article>
+<article class="testimonial-card"><img alt="Shipra Kayak" class="testimonial-card__avatar lazy-image" data-lazy-src="https://www.figma.com/api/mcp/asset/cdfebe14-f45c-4914-8c13-84dbff266e5a.png" decoding="async" fetchpriority="low" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><p class="testimonial-card__quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><h3 class="testimonial-card__name">Shipra Kayak</h3><p class="testimonial-card__role">Brand Designer</p></article>
+<article class="testimonial-card"><img alt="John Lepore" class="testimonial-card__avatar lazy-image" data-lazy-src="https://www.figma.com/api/mcp/asset/0ea7581b-a26e-4e63-a777-59143efeaacd.png" decoding="async" fetchpriority="low" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><p class="testimonial-card__quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><h3 class="testimonial-card__name">John Lepore</h3><p class="testimonial-card__role">CEO, Foreclosure</p></article>
+<article class="testimonial-card"><img alt="Marry Freeman" class="testimonial-card__avatar lazy-image" data-lazy-src="https://www.figma.com/api/mcp/asset/a18b5175-7b82-475d-86de-014cf1e52939.png" decoding="async" fetchpriority="low" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><p class="testimonial-card__quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><h3 class="testimonial-card__name">Marry Freeman</h3><p class="testimonial-card__role">Marketing Manager at Mixit</p></article>
+<article class="testimonial-card"><img alt="Lucy" class="testimonial-card__avatar lazy-image" data-lazy-src="https://www.figma.com/api/mcp/asset/7f5fb7ec-4d26-4a02-876d-e7d6a1c78804.png" decoding="async" fetchpriority="low" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><p class="testimonial-card__quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><h3 class="testimonial-card__name">Lucy</h3><p class="testimonial-card__role">Sales Rep at Alibaba</p></article>
+</div>
+</div>
+</section>
+<section class="listing-cta"><img alt="" aria-hidden="true" class="listing-cta__media lazy-image" data-lazy-src="https://www.figma.com/api/mcp/asset/7e18177c-b06d-4517-a41e-a0e137afa453.png" decoding="async" fetchpriority="low" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/>
+<div aria-hidden="true" class="listing-cta__overlay"></div>
+<div class="container listing-cta__inner">
+<h2 class="listing-cta__title">Learn more about our listing process, as well as our additional staging and design work.</h2>
+<a class="button button--white listing-cta__button" href="#about">LEARN MORE</a>
+</div>
+</section>
+<footer class="footer">
+<div class="footer__top">
+<div class="container footer__top-inner">
+<nav aria-label="Footer navigation" class="footer__nav">
+<a class="footer__nav-link" href="#home">Home</a>
+<a class="footer__nav-link" href="#services">Services</a>
+<a class="footer__nav-link" href="#projects">Projects</a>
+<a class="footer__nav-link" href="#testimonials">Testimonials</a>
+<a class="footer__nav-link" href="#contact">Contact</a>
+</nav>
+<form class="newsletter" data-newsletter-form="">
+<label class="newsletter__label" for="newsletter-email">Subscribe Us</label>
+<div class="newsletter__control"><input class="newsletter__input" id="newsletter-email" placeholder="Enter Email Address" required="" type="email"/><button class="newsletter__button" type="submit">Subscribe</button></div>
+</form>
+</div>
+</div>
+<div class="footer__bottom">
+<div class="container footer__bottom-inner">
+<p class="footer__copyright">All Rights Reserved 2023</p>
+<img alt="Real Trust" class="footer__logo" decoding="async" src="project-files/Frame 9.svg"/>
+<div aria-label="Social links" class="footer__socials"><a aria-label="Twitter" class="footer__social" href="#">t</a><a aria-label="Instagram" class="footer__social" href="#">i</a><a aria-label="Facebook" class="footer__social" href="#">f</a><a aria-label="LinkedIn" class="footer__social" href="#">in</a></div>
+</div>
+</div>
+</footer>
+</main>
+<script defer="" src="main.js"></script>
+</body>
+</html>
